@@ -3,9 +3,9 @@ using System;
 
 namespace Sameday.Requests
 {
-    public class SamedayDeleteAwbRequest : ISamedayRequest
+    public class SamedayGetAwbStatusHistoryRequest : ISamedayRequest
     {
-        public SamedayDeleteAwbRequest(string awb)
+        public SamedayGetAwbStatusHistoryRequest(string awb)
         {
             Awb = awb;
         }

@@ -1,4 +1,5 @@
 ﻿using Sameday.Http;
+using System;
 
 namespace Sameday
 {
@@ -6,17 +7,17 @@ namespace Sameday
     {
         public bool Login()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public void Logoff()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public SamedayRawResponse SendRequest(SamedayRequest request)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

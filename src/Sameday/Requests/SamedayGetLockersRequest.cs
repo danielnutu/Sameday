@@ -3,14 +3,14 @@ using System;
 
 namespace Sameday.Requests
 {
-    public class SamedayDeleteAwbRequest : ISamedayRequest
+    public class SamedayGetLockersRequest : ISamedayRequest
     {
-        public SamedayDeleteAwbRequest(string awb)
+        public SamedayGetLockersRequest(string[] lockerIds)
         {
-            Awb = awb;
+            LockerIds = lockerIds;
         }
 
-        public string Awb { get; set; }
+        public string[] LockerIds { get; set; }
 
         public SamedayRequest BuildRequest()
         {

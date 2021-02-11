@@ -3,18 +3,16 @@ using System;
 
 namespace Sameday.Requests
 {
-    public class SamedayGetCitiesRequest : ISamedayPaginatedRequest
+    public class SamedayGetStatusSyncRequest : ISamedayPaginatedRequest
     {
-        public SamedayGetCitiesRequest(int countyId = 0, string name = null, string postalCode = null)
+        public SamedayGetStatusSyncRequest(int startTimestamp, int endTimestamp)
         {
-            CountyId = countyId;
-            Name = name;
-            PostalCode = postalCode;
+            StartTimestamp = startTimestamp;
+            EndTimestamp = endTimestamp;
         }
 
-        public int CountyId { get; set; }
-        public string Name { get; set; }
-        public string PostalCode { get; set; }
+        public int StartTimestamp { get; set; }
+        public int EndTimestamp { get; set; }
         public int Page { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int CountPerPage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
@@ -22,5 +20,6 @@ namespace Sameday.Requests
         {
             throw new NotImplementedException();
         }
+
     }
 }

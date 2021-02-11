@@ -3,14 +3,11 @@ using System;
 
 namespace Sameday.Requests
 {
-    public class SamedayDeleteAwbRequest : ISamedayRequest
+    public class SamedayPostAwbRequest : ISamedayRequest
     {
-        public SamedayDeleteAwbRequest(string awb)
+        public SamedayPostAwbRequest()
         {
-            Awb = awb;
         }
-
-        public string Awb { get; set; }
 
         public SamedayRequest BuildRequest()
         {
