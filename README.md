@@ -1,2 +1,2 @@
 # Sameday
-Sameday SDK for .Net
+Sameday Courier SDK for .Net
