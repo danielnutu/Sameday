@@ -2,9 +2,15 @@
 
 namespace Sameday.Exceptions
 {
-    public class SamedayServerException: SamedaySDKException
+    public class SamedayServerException : SamedaySDKException
     {
-        public SamedayServerException(SamedayRequest request, SamedayRawResponse rawResponse)
+
+        public SamedayServerException(SamedayRequest request, SamedayRawResponse rawResponse) : this(request, rawResponse, null)
+        {
+
+        }
+
+        public SamedayServerException(SamedayRequest request, SamedayRawResponse rawResponse, string message) : base(message)
         {
             Request = request;
             RawResponse = rawResponse;
